@@ -1,0 +1,245 @@
+<resources>
+
+    <string name="app_name">OneScream</string>
+    <string name="facebook_app_id">183652728645869</string>
+    <string name="word_settings">Settings</string>
+    <string name="word_cancel">Cancel</string>
+    <string name="word_ok">Ok</string>
+    <string name="word_yes">Yes</string>
+    <string name="word_no">No</string>
+    <string name="word_signup">Register</string>
+    <string name="word_login">Sign In</string>
+    <string name="word_back">Back</string>
+    <string name="word_continue">Continue</string>
+    <string name="word_create_account">Create account</string>
+    <string name="word_submit">Submit</string>
+    <string name="word_confirm">Confirm</string>
+    <string name="word_false">CANCEL ALERT</string>
+    <string name="GPSAlertDialogTitle">GPS Error</string>
+    <string name="GPSAlertDialogMessage">Please enable GPS/network in settings</string>
+
+    <!-- Google API -->
+    <string name="app_googleapi_map_key">AIzaSyCbkcbYohZz0cU0gadHUX-CGPPN92bCMP0</string>
+    <string name="app_googleapi_places_key">AIzaSyCJZP2ZEhknm0xU8BW_ipDG7tg1gyAA660</string>
+
+    <!-- Home Screen -->
+    <string name="home_settings_btn">Settings</string>
+    <string name="home_play_btn">Start Protection</string>
+    <string name="home_pause_btn">Pause Protection</string>
+    <string name="home_playing_text">YOU ARE BEING PROTECTED BY ONE SCREAM</string>
+    <string name="home_paused_text">You are not protected.\nDon\'t forget to turn one scream back on!</string>
+    <string name="home_ask_to_join_text">Would you like to join One Scream?</string>
+    <string name="home_ask_to_join_yes">Yes, Please!</string>
+    <string name="home_ask_to_join_no">Not Now</string>
+
+    <!-- First Screen -->
+    <string name="intro_text1">We will hear you when you need us most</string>
+    <string name="intro_title2">Introduction to One Scream</string>
+    <string name="intro_text2">We hope you\'ll never need One Scream. \n\nBut if you are in danger and can not phone for help, we will hear your scream and send an automated message to police, telling them who you are and where to find you.</string>
+    <string name="intro_text2_1">One Scream has been scientifically developed to only respond to genuine panic screams. Just as your own ear hears real distress, our app can distinguish a true panic scream from other screams and sounds.</string>
+    <string name="intro_text_swipe">SWIPE TO CONTINUE</string>
+    <string name="intro_title3">How One Scream Works</string>
+    <string name="intro_text3">Download the app and keep it running in the background. \n\nIf we hear your scream three times, we know you are in real danger and activates an alarm and calls the police on your behalf. \n\nAfter the police hear your a recording of your scream, they have an open line to your phone. \n\nWe do not listen for or record spoken words, we only ever record panic screams.</string>
+    <string name="intro_title4">When we can not hear you</string>
+    <string name="intro_text4">Your phone is switched off. \n\nYou are on a call. \n\nYou are at a concert or riding a roller coaster(too many screams!). \n\nYou are using other voice-activated apps. </string>
+    <string name="intro_title4n">\nThe good news is One Scream can hear you from a distance, and you will still be protected if your phone is buried in your bag.</string>
+    <string name="intro_continue">That\'s It!</string>
+    <string name="intro_title5">We think you should know:</string>
+    <string name="intro_text5_1">One Scream can not hear you if your phone is powered off or when you are on the phone.</string>
+    <string name="intro_text5_2">One Scream can hear you if your phone is in your ba or less than 5 meters away from you.</string>
+    <string name="intro_text5_3">We will not record your spoken words, we care about your Privacy. We will record your panic scream, it makes us smarter.</string>
+    <string name="intro_text5_4">If our app activates a call to Police on your behalf, the Police will hear the recorded scream and they will have an open line to hear you.</string>
+
+    <!-- Signup Screen -->
+    <string name="signup_title">Sign up</string>
+    <string name="signup_firstname">First name</string>
+    <string name="signup_lastname">Last name</string>
+    <string name="signup_name">Name</string>
+    <string name="signup_postcode">Postcode</string>
+    <string name="signup_phone">Phone number</string>
+    <string name="signup_email">Email Address</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_pwd_confirm">Re-enter password</string>
+    <string name="signup_text1">Ready?</string>
+    <string name="signup_text2">Start your 14 days trial</string>
+    <string name="signup_text3">By tapping to \"Create Account\", you are indicating that you have read</string>
+    <string name="signup_text4">the</string>
+    <string name="signup_text5">Privacy Policy</string>
+    <string name="signup_text6">and agree to the</string>
+    <string name="signup_text7">Terms of Service.</string>
+    <string name="signup_fb_login">Create Using Facebook</string>
+
+    <!-- Login Screen -->
+    <string name="login_title1">Ready?</string>
+    <string name="login_title2">Sign In</string>
+    <string name="login_text1">Your address helps us keep you safe. GPS and WIFI work together to communicate to Police where you are.</string>
+    <string name="login_btn">Submit</string>
+    <string name="login_fb_btn">Facebook Login</string>
+    <string name="login_text2">Don\'t have an account?</string>
+    <string name="reset_text2">Forgot your login details?</string>
+    <string name="reset_text">Reset password</string>
+
+    <string name="login_signup_btn">Create One Now</string>
+
+    <!-- License Screen -->
+    <string name="license_text1">You can feel safer now. By signing up you agree to our terms and conditions.</string>
+    <string name="license_toc_btn">Terms &amp; Conditions</string>
+    <string name="license_privacy_btn">Privacy Policy</string>
+    <string name="license_agree_btn">I Agree</string>
+
+    <!-- Thank you Screen -->
+    <string name="thankyou_title1">One More Thing!</string>
+    <string name="thankyou_title2">If We Hear You Scream</string>
+    <string name="thankyou_text1">The phone will vibrate You will hear a loud siren Lights will flash.</string>
+    <string name="thankyou_text2">You have 12 seconds to cancel the alarm before the police are notified.</string>
+    <string name="thankyou_trial_btn">Try us for 14 days</string>
+    <string name="thankyou_subscribe_btn">Or Subscribe</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_header_support">SUPPORT</string>
+    <string name="settings_header_aboutus">ABOUT US</string>
+    <string name="settings_submenu_faq">FAQ</string>
+    <string name="setting_submenu_about">About</string>
+    <string name="settings_submenu_contactus">Contact</string>
+    <string name="settings_submenu_your_details">Account</string>
+    <string name="settings_submenu_tour">Tour</string>
+    <string name="settings_submenu_founders">Founders</string>
+    <string name="settings_submenu_toc">TERMS &amp; SERVICES</string>
+    <string name="settings_submenu_privacy">PRIVACY POLICY</string>
+    <string name="settings_submenu_howitworks">How it works</string>
+    <string name="settings_submenu_logout">Log out</string>
+    <string name="settings_logout_ask">Are you sure you want to turn off One Scream?</string>
+
+    <!-- Contact us -->
+    <string name="contactus_title">CONTACT US</string>
+    <string name="contactus_text1">Need to speak with someone?</string>
+    <string name="contactus_text2">Reach out to our help team at &#160; </string>
+    <string name="contactus_text3">help@onescream.com</string>
+
+    <!-- Your details -->
+    <string name="yourdetails_title">YOUR DETAILS</string>
+    <string name="yourdetails_subtitle1">Personal Information</string>
+    <string name="yourdetails_firstname">First name</string>
+    <string name="yourdetails_lastname">Last name</string>
+    <string name="yourdetails_phone">Phone number</string>
+    <string name="yourdetails_email">Email address</string>
+    <string name="yourdetails_subtitle2">Your addresses</string>
+    <string name="yourdetails_address">Address</string>
+    <string name="yourdetails_postcode">Add a new postcode</string>
+    <string name="yourdetails_subtitle3">Your protection plan</string>
+    <string name="yourdetails_subscribe">Manage Subscription</string>
+    <string name="yourdetails_subtitle4">Frequent Addresses</string>
+    <string name="yourdetails_update_info">Update Information</string>
+    <string name="yourdetails_wifi_addresses">Update frequented addresses</string>
+    <string name="yourdetails_ph">Phone</string>
+    <string name="yourdetails_nm">Name</string>
+    <string name="yourdetails_em">Email</string>
+    <string name="yourdetails_Add_home">+ Add Home Address</string>
+    <string name="yourdetails_Add_work">+ Add Work Address</string>
+    <string name="yourdetails_Add_frequent">+ Add Frequented Address</string>
+
+
+    <!-- Upgrade Membership -->
+    <string name="subscribe_title">PAYMENT</string>
+    <string name="subscribe_text1">Your card is secure, etc.</string>
+    <string name="subscribe_card_name">FULL NAME ON CARD</string>
+    <string name="subscribe_card_number">CARD NUMBER</string>
+    <string name="subscribe_card_number_hint">0000 0000 0000 0000</string>
+    <string name="subscribe_card_cvc">CVC</string>
+    <string name="subscribe_card_cvc_hint">000</string>
+    <string name="subscribe_card_expiry_month">EXP.MONTH</string>
+    <string name="subscribe_card_expiry_year">EXP.YEAR</string>
+    <string name="subscribe_address">ADDRESS</string>
+    <string name="subscribe_puchase_btn">Save Payment Information</string>
+    <string name="subscribe_puchased_already">I\'ve already purchased</string>
+
+    <!-- Frequented addresses Screen -->
+    <string name="wifis_title">Frequented Addresses</string>
+    <string name="wifis_text1">Knowing your address helps us keep you safe. GPS and WIFI work together to communicate to Police where you are.</string>
+    <string name="wifis_add_btn">Add Location</string>
+    <string name="wifis_text_new1">Knowing your most frequented address \nhelps us keep you safe.</string>
+
+    <string name="wifis_finished_btn">Add more later</string>
+
+    <!-- WiFi address Screen -->
+    <string name="wifi_detail_title">Frequented Address</string>
+    <string name="wifi_detail_nameplace">Name place</string>
+    <string name="wifi_detail_address">Address</string>
+    <string name="wifi_detail_register_btn">Register</string>
+    <string name="wifi_detail_save_btn">Save</string>
+
+    <!-- Founders Screen -->
+    <string name="founders_title">Founders</string>
+    <string name="founders_text1">Who founded One Scream?</string>
+    <string name="founders_text2">Relevant info</string>
+
+    <!-- Terms and Condtions Screen -->
+    <string name="toc_title">Terms and Services</string>
+    <string name="toc_sub_title">You need to agree to the Term and Conditions first.</string>
+
+    <!-- Privacy policy Screen -->
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_sub_title">Privacy Policy</string>
+
+    <!-- How it works -->
+    <string name="howitworks_title">How it works</string>
+
+    <!-- Faqs Screen -->
+    <string name="faqs_title">FAQ</string>
+
+    <!-- Faq Screen -->
+    <string name="faq_title">Faq</string>
+
+    <!-- Ask to join screen -->
+    <string name="asktojoin_text">Would you like to join\nOneScream?</string>
+    <string name="asktojoin_btn_yes">Yes, please!</string>
+    <string name="asktojoin_btn_no">Not now</string>
+
+    <!-- one scream label -->
+    <string name="label_one_scream">0ne Scream</string>
+    <string name="cancel_text">You have 12 Seconds to cancel</string>
+
+    <!-- Reset Password screen-->
+    <string name="reset_password_head">Password Reset</string>
+    <string name="reset_password_text">Enter your email address and we\'ll get you back on track.</string>
+    <string name="reset_password_error_text">We couldn\'t find the email</string>
+    <string name="reset_password_btn_text">Request Reset Link</string>
+    <string name="reset_password_btn_thanks">Thanks&#33;</string>
+
+    <!-- About screen-->
+<string name="about_text">Uta de Veer and Lane Clements Mclean are the co-founders of
+One Scream. Uta and Lane met in 2007 when their children
+were still very young. Lane only nearly escaped a violent rape
+attempt in university and, just before meeting Uta, a mugging.
+One of their first conversations was a reiteration of the
+mugging and the feelings of helplessness and fear that both
+attempts left behind. In 2015, Uta suggested they create an
+app to help women in this situation. One Scream was born. It
+feels great to turn something dark from your own life into a
+force for good for others!
+</string>
+    <string name="about_fb_text">Like us on Facebook</string>
+    <string name="about_app_text">Rate us in the App Store</string>
+    <string name="about_invite">Invite Friends</string>
+    <string name="about_one">onescream.com</string>
+    <string name="about_title">About</string>
+    <string name="segment_key">qz2ZhvHFW9LU4Ct6EhD3gbH6Vmq69bfO</string>
+    <string name="signing_in">Login Screen</string>
+    <string name="about_intro">Tour Screen 1</string>
+    <string name="about_how">Tour Screen 2</string>
+    <string name="about_not_hear_you">Tour Screen 3</string>
+    <string name="raedy_page">Ready?</string>
+    <string name="frequesnted_address">Frequented addresses input</string>
+    <string name="one_more_thing">One more thing</string>
+    <string name="Listening">Listening</string>
+    <string name="standing_by">Standing By</string>
+    <string name="personal_info">Personal information Frequented addresses </string>
+
+    <string name="contact">Contact</string>
+    <string name="tour">Tour</string>
+    <string name="about">About</string>
+    <string name="FAQ">FAQs</string>
+
+
+</resources>

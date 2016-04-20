@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="detected_counter_size">122sp</dimen>
+    <dimen name="faq_content">32sp</dimen>
+    <dimen name="faq_header">38sp</dimen>
+    <dimen name="faq_title">43sp</dimen>
+</resources>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+
+         
+    <ScrollView
+                        android:id="@+id/scroll"
+        
+        android:isScrollContainer="false"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         >
+   <LinearLayout
+                android:id="@+id/frm_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+
+                <RelativeLayout
+                 android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                      
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/xml_button_trans_rect_bg_selector"
+                        android:scaleType="center"
+                        android:tint="@android:color/black"
+                        android:src="@drawable/menusmal"/>
+
+                    <TextView
+                        android:id="@+id/title_faq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:text="@string/faqs_title"
+                        android:textColor="#20262e"
+                        android:textSize="@dimen/faq_title"
+                       android:layout_centerInParent="true"
+                        
+                          />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.onescream.library.MocouListView
+                android:id="@+id/lv_faqs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/frm_header"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

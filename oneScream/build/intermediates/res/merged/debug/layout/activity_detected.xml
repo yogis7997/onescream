@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top" >
+
+   <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="SCREAM DETECTED"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="SCREAM DETECTED"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout> -->
+
+       <RelativeLayout
+           android:id="@+id/relative1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+          >
+
+                <RelativeLayout
+                    android:id="@+id/frm_sub_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="35dp" >
+
+                     
+                     <ImageView
+            android:id="@+id/screen_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+           	android:src="@drawable/splash_screen_text"
+            />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"                
+                        android:layout_below="@+id/frm_sub_header"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp" >
+
+                    <TextView
+                                                    android:id="@+id/detected_text"
+                        
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         android:text="Scream Detected"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/xml_shape_rect_yellow" />
+
+                    <TextView
+                         
+                        android:id="@+id/top_text_police"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel_text"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                 
+            </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       
+        android:layout_below="@+id/relative1"
+        android:layout_above="@+id/linear2"
+        android:id="@+id/linearLayout1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+     
+
+        <TextView
+            android:id="@+id/tv_remained_secs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:text="10"
+            android:padding="10dp"
+            
+         	
+            android:textColor="#e3bc4e"
+        
+             android:textSize="@dimen/detected_counter_size" />
+
+        <TextView
+            android:id="@+id/text_dont_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+                  android:visibility="gone" 
+             android:text="DO NOT MAKE A CALL"
+            android:textColor="#e3bc4e"
+            android:textSize="50sp"
+            android:textStyle="normal"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+          android:id="@+id/linear2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/frm_btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/xml_button_rect"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/xml_button_trans_rect_bg_selector"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/word_confirm"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_font_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frm_btn_false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_cancel"
+             android:background="#e3bc4e" >
+
+            <TextView
+                android:id="@+id/tv_btn_false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/xml_button_trans_rect_bg_selector"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/word_false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/button_font_size_cancel" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

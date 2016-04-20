@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!-- Your Details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/license_text1"
+            android:textColor="@android:color/black"
+            android:textSize="19sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_btn_toc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/xml_button_trans_rect_bg_selector"
+            android:padding="10dp"
+            android:text="@string/license_toc_btn"
+            android:textColor="#3399FF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_btn_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/xml_button_trans_rect_bg_selector"
+            android:padding="10dp"
+            android:text="@string/license_privacy_btn"
+            android:textColor="#3399FF"
+            android:textSize="17sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+
+        <FrameLayout
+            android:id="@+id/frm_btn_agree"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/xml_button_rect">
+
+            <TextView
+                android:id="@+id/tv_btn_agree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/xml_button_trans_rect_bg_selector"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/license_agree_btn"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_font_size" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+
+            <include layout="@layout/layout_intro_indicator"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

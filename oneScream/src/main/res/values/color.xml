@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_bg_selector">#aae0e0e0</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="status_bar_color">#283643</color>
+    <color name="menu_marker_color">#E3BC4E</color>
+    <color name="text_light_color">#626c77</color>
+    <color name="text_default_color">#201E1E</color>
+    <color name="et_default_color">#CECFD0</color>
+    <color name="et_grey_color">#CECFD0</color>
+</resources>

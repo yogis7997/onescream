@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".settings.AddAdressActivity">
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/rlt"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/xml_button_trans_rect_bg_selector"
+            android:scaleType="center"
+            android:src="@drawable/menusmal" />
+
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#20262e"
+            android:textSize="@dimen/faq_header"
+            android:layout_centerInParent="true"
+
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlt"
+        android:scrollbars="none" >
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+       android:orientation="vertical">
+
+       <EditText
+        android:id="@+id/et_wifi_busines"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_editbox"
+        android:gravity="center_vertical"
+        android:hint="Business Name"
+        android:imeOptions="actionDone"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:textColor="#344251"
+        android:textSize="15sp" />
+
+       <EditText
+           android:id="@+id/et_wifi_street1"
+           android:layout_width="match_parent"
+           android:layout_height="36dp"
+           android:layout_marginTop="15dp"
+           android:background="@drawable/bg_editbox"
+           android:gravity="center_vertical"
+           android:hint="Street Address 1"
+           android:imeOptions="actionDone"
+           android:paddingBottom="10dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:paddingTop="10dp"
+           android:singleLine="true"
+           android:textColor="#344251"
+           android:textSize="15sp" />
+        <com.onescream.library.MocouListView
+            android:id="@+id/lv_address_streets1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/xml_bg_presets_list"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scrollbars="none" />
+       <EditText
+           android:id="@+id/et_wifi_stree2"
+           android:layout_width="match_parent"
+           android:layout_height="36dp"
+           android:layout_marginTop="15dp"
+           android:background="@drawable/bg_editbox"
+           android:gravity="center_vertical"
+           android:hint="Street Address 2"
+           android:imeOptions="actionDone"
+           android:paddingBottom="10dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:paddingTop="10dp"
+           android:singleLine="true"
+           android:textColor="#344251"
+           android:textSize="15sp" />
+        <com.onescream.library.MocouListView
+            android:id="@+id/lv_address_streets2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/xml_bg_presets_list"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scrollbars="none" />
+       <EditText
+           android:id="@+id/et_wifi_addresscity"
+           android:layout_width="match_parent"
+           android:layout_height="36dp"
+           android:layout_marginTop="15dp"
+           android:background="@drawable/bg_editbox"
+           android:gravity="center_vertical"
+           android:hint="City"
+           android:imeOptions="actionDone"
+           android:paddingBottom="10dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:paddingTop="10dp"
+           android:singleLine="true"
+           android:textColor="#344251"
+           android:textSize="15sp" />
+       <EditText
+           android:id="@+id/et_wifi_addresstate"
+           android:layout_width="match_parent"
+           android:layout_height="36dp"
+           android:layout_marginTop="15dp"
+           android:background="@drawable/bg_editbox"
+           android:gravity="center_vertical"
+           android:hint="State/Region"
+           android:imeOptions="actionDone"
+           android:paddingBottom="10dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:paddingTop="10dp"
+           android:singleLine="true"
+           android:textColor="#344251"
+           android:textSize="15sp" />
+       <EditText
+           android:id="@+id/et_wifi_addresspostal"
+           android:layout_width="match_parent"
+           android:layout_height="36dp"
+           android:layout_marginTop="15dp"
+           android:background="@drawable/bg_editbox"
+           android:gravity="center_vertical"
+           android:hint="Postal"
+           android:imeOptions="actionDone"
+           android:paddingBottom="10dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:paddingTop="10dp"
+           android:singleLine="true"
+           android:textColor="#344251"
+           android:textSize="15sp" />
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/button_height"
+           android:layout_gravity="center"
+           android:layout_marginTop="20dp"
+            android:id="@+id/add"
+           android:background="#e3bc4e" >
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/xml_button_trans_rect_bg_selector"
+               android:duplicateParentState="true"
+               android:gravity="center"
+
+               android:textColor="#ffffff"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp"
+               android:paddingBottom="2dp"
+               android:text=""
+
+android:id="@+id/save"
+               android:textSize="@dimen/button_font_size" />
+       </FrameLayout>
+   </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background_color"
+android:orientation="vertical" >
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/xml_button_trans_rect_bg_selector"
+            android:scaleType="center"
+            android:tint="@android:color/black"
+            android:src="@drawable/menusmal"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_title"
+            android:textColor="#20262e"
+            android:textSize="@dimen/faq_title"
+            android:layout_centerInParent="true"
+
+            />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="70" >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:textSize="13sp"
+    android:id="@+id/text1"
+    android:textColor="@color/text_light_color"
+    android:text="@string/about_text"/>
+
+
+
+
+
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="48"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical" >
+
+
+
+        <FrameLayout
+            android:id="@+id/frm_btn_fb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+             >
+
+            <TextView
+                android:id="@+id/tv_btn_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/xml_button_trans_rect_bg_selector"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/about_fb_text"
+                android:clickable="false"
+                android:textColor="@color/text_light_color"
+                android:textSize="@dimen/button_font_size" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/list_arrow"></ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="#999999" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frm_btn_appstore"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_btn_appstore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/xml_button_trans_rect_bg_selector"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:clickable="false"
+                android:textColor="@color/text_light_color"
+                android:text="@string/about_app_text"
+                android:textSize="@dimen/button_font_size" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/list_arrow"></ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="#999999" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frm_btn_invite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_btn_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/xml_button_trans_rect_bg_selector"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:clickable="false"
+                android:textColor="@color/text_light_color"
+                android:paddingBottom="2dp"
+                android:text="@string/about_invite"
+                android:textSize="@dimen/button_font_size" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/list_arrow"></ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="#999999" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frm_btn_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/xml_button_trans_rect_bg_selector"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:clickable="false"
+                android:textColor="@color/text_light_color"
+                android:paddingBottom="2dp"
+                android:text="@string/about_one"
+                android:textSize="@dimen/button_font_size" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/list_arrow"></ImageView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="#999999" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

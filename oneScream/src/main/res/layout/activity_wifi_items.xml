@@ -1,0 +1,352 @@
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+     >
+
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" 
+    android:layout_above="@+id/frm_buttons"
+     android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical" 
+         android:layout_marginBottom="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="256dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_galaxy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/frm_sub_header"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp" >
+
+                <TextView
+                    android:id="@+id/titile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifis_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/xml_shape_rect_yellow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifis_text1"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_shadow" />
+
+            <RelativeLayout
+                android:id="@+id/frm_sub_header"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp" >
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/xml_button_trans_round_bg_selector"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_back" />
+
+                <ImageView
+                    android:id="@+id/labelll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                   android:src="@drawable/splash_screen_text" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <include layout="@layout/layout_intro_indicator" />
+
+     <!--        <ScrollView
+                android:id="@+id/lv_wifi_items"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@android:color/transparent"
+                android:isScrollContainer="false"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp" >
+ -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/et_wifi_title1"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_editbox"
+                            android:editable="false"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:hint="Home"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Home"
+                            android:textColor="#344251"
+                            android:textSize="15sp" >
+
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/et_wifi_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:hint="Address"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:singleLine="true"
+                            android:textColor="#344251"
+                            android:textSize="15sp" />
+
+                        <com.onescream.library.MocouListView
+                            android:id="@+id/lv_address_presets1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/xml_bg_presets_list"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/et_wifi_title2"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:hint="Other"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:singleLine="true"
+                            android:textColor="#344251"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_wifi_address2"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:hint="Address"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:singleLine="true"
+                            android:textColor="#344251"
+                            android:textSize="15sp" />
+
+                        <com.onescream.library.MocouListView
+                            android:id="@+id/lv_address_presets2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/xml_bg_presets_list"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/et_wifi_title3"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:hint="Other"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:singleLine="true"
+                            android:textColor="#344251"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_wifi_address3"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:hint="Address"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:singleLine="true"
+                            android:textColor="#344251"
+                            android:textSize="15sp" />
+
+                        <com.onescream.library.MocouListView
+                            android:id="@+id/lv_address_presets3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/xml_bg_presets_list"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+                </LinearLayout>
+           
+
+          
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+  <LinearLayout
+      android:layout_alignParentBottom="true"
+      
+       android:background="#ffffff"
+                android:id="@+id/frm_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                
+ android:layout_marginBottom="10dp"
+                 android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/frm_btn_add_location"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#344251" >
+
+                    <TextView
+                        android:id="@+id/tv_btn_add_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/xml_button_trans_rect_bg_selector"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:text="@string/wifis_add_btn"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/button_font_size" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frm_btn_finished"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/xml_button_rect" >
+
+                    <TextView
+                        android:id="@+id/tv_btn_finished"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/xml_button_trans_rect_bg_selector"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:text="@string/wifis_finished_btn"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/button_font_size" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+</RelativeLayout>

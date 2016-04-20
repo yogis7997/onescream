@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/frm_sub_header"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp" >
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/xml_button_trans_round_bg_selector"
+            android:scaleType="center"
+            android:src="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/screen_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+           	android:src="@drawable/splash_screen_text"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standing By"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/xml_shape_rect_yellow" />
+
+        <TextView
+            android:id="@+id/tv_detect_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_title2"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_detect_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_moon_home" />
+
+        <ImageView
+            android:id="@+id/iv_detect_status1"
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_planet" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_detect_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/xml_button_trans_round_bg_selector"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_play" />
+
+</LinearLayout>

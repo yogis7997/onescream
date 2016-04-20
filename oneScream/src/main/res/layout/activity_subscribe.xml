@@ -1,0 +1,318 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <ScrollView
+        android:id="@+id/lv_menus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/frm_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/xml_button_trans_rect_bg_selector"
+                        android:scaleType="center"
+                        android:src="@drawable/btn_back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/subscribe_title"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frm_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="60dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <!-- Your Details -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="MONTHLY"
+                            android:textColor="#181f27"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_plan_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="47dp"
+                            android:background="@drawable/xml_upgrade_plan_bg"
+                            android:gravity="center"
+                            android:text="$0.99"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:paddingTop="20dp"
+                        android:text="OR"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="ANNUAL"
+                            android:textColor="#181f27"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_plan_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="47dp"
+                            android:background="@drawable/xml_upgrade_plan_bg"
+                            android:gravity="center"
+                            android:text="$9.99"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/subscribe_card_name"
+                    android:textColor="#181f27"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_card_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_editbox"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="@string/subscribe_card_number"
+                            android:textColor="#181f27"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_card_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:hint="@string/subscribe_card_number_hint"
+                            android:inputType="phone"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="@string/subscribe_card_cvc"
+                            android:textColor="#181f27"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_card_cvc"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:hint="@string/subscribe_card_cvc_hint"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="@string/subscribe_card_expiry_month"
+                            android:textColor="#181f27"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_card_expiry_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="@string/subscribe_card_expiry_year"
+                            android:textColor="#181f27"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_card_expiry_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_editbox"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/subscribe_address"
+                    android:textColor="#181f27"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_editbox"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="13sp" />
+
+                <FrameLayout
+                    android:id="@+id/frm_purchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/xml_button_rect" >
+
+                    <TextView
+                        android:id="@+id/tv_purchase"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/xml_button_trans_rect_bg_selector"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:text="@string/subscribe_puchase_btn"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/button_font_size" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

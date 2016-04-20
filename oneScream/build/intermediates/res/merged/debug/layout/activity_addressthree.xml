@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".settings.FrequentAddress">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+       <RelativeLayout
+           android:id="@+id/frm_sub_header"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           >
+
+           <ImageView
+               android:layout_centerVertical="true"
+               android:id="@+id/iv_back"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginLeft="10dp"
+               android:background="@drawable/xml_button_trans_round_bg_selector"
+               android:scaleType="center"
+               android:padding="5dp"
+               android:src="@drawable/menusmal"
+               android:tint="@android:color/black" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:text="FREQUENTED ADRESSES"
+               android:textColor="#222a33"
+               android:id="@+id/title"
+               android:textSize="@dimen/faq_title" />
+       </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+           android:layout_marginBottom="20dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please make sure your most frequented addresses are up to date."
+                android:textColor="#344251"
+                android:id="@+id/txt1"
+                android:textSize="@dimen/faq_content"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/xml_shape_rect_yellow"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="it helps us keep you safe!"
+                android:textColor="#344251"
+                android:textSize="@dimen/faq_content"
+                android:id="@+id/txt2"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingLeft="30dp"
+           android:paddingRight="30dp"
+           android:orientation="vertical" >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:orientation="vertical" >
+
+               <FrameLayout
+                   android:id="@+id/fm_btn_home"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:background="@drawable/xml_rect_boundry" >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:paddingLeft="10dp"
+                       android:visibility="gone"
+                       android:paddingTop="5dp"
+                       android:id="@+id/layout_txt"
+                       android:orientation="vertical">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/text_default_color"
+                           android:paddingTop="1dp"
+                           android:id="@+id/a_adre"
+                           android:textSize="@dimen/txt_small"
+                           android:text="Home"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:id="@+id/a_adresa"
+                           android:textSize="@dimen/txt_small"
+                           android:textColor="@color/text_default_color"
+                           android:text="kentn park garden"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:textColor="@color/text_default_color"
+                           android:id="@+id/a_adresb"
+                           android:textSize="@dimen/txt_small"
+                           android:text="Flat 5,golden house"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:textColor="@color/text_default_color"
+                           android:id="@+id/a_adresc"
+                           android:textSize="@dimen/txt_small"
+                           android:text="London,12202022"/>
+
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginTop="5dp"
+                           android:orientation="horizontal">
+                           <Button
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:paddingTop="7dp"
+                               android:paddingBottom="7dp"
+                               android:layout_weight="1.0"
+                               android:id="@+id/a_edit"
+                               android:background="#ebebeb"
+                               android:textSize="@dimen/btn_txt_small"
+                               android:layout_marginBottom="5dp"
+                               android:text="Edit"/>
+                           <Button
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:paddingTop="7dp"
+                               android:paddingBottom="7dp"
+                               android:layout_weight="1.0"
+                               android:id="@+id/a_dlt"
+                               android:textSize="@dimen/btn_txt_small"
+                               android:background="#ffffff"
+                               android:layout_marginLeft="10dp"
+
+                               android:layout_marginRight="5dp"
+                               android:layout_marginBottom="5dp"
+                               />
+                       </LinearLayout>
+                   </LinearLayout>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@drawable/xml_button_trans_rect_bg_selector"
+                       android:duplicateParentState="true"
+                       android:gravity="center_vertical|left"
+                       android:layout_gravity="center"
+                       android:textColor="#000000"
+                       android:paddingLeft="15dp"
+                       android:paddingRight="10dp"
+                       android:id="@+id/add_home"
+                       android:paddingBottom="20dp"
+                       android:paddingTop="20dp"
+
+                       android:text="@string/yourdetails_Add_home"
+                       android:textSize="@dimen/button_font_size" />
+               </FrameLayout>
+               <FrameLayout
+                   android:id="@+id/fm_btn_work"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:layout_marginTop="-1dp"
+                   android:background="@drawable/xml_rect_boundry" >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:paddingLeft="10dp"
+                       android:paddingTop="5dp"
+                       android:id="@+id/layout_txt1"
+                       android:visibility="gone"
+                       android:orientation="vertical">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/text_default_color"
+                           android:paddingTop="1dp"
+                           android:id="@+id/b_adre"
+                           android:textSize="@dimen/txt_small"
+                           android:text="Work"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:id="@+id/b_adresa"
+                           android:textSize="@dimen/txt_small"
+                           android:textColor="@color/text_default_color"
+                           android:text="kentn park garden"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:textColor="@color/text_default_color"
+                           android:id="@+id/b_adresb"
+                           android:textSize="@dimen/txt_small"
+                           android:text="Flat 5,golden house"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:id="@+id/b_adresc"
+                           android:textSize="@dimen/txt_small"
+                           android:textColor="@color/text_default_color"
+                           android:text="London,12202022"/>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginTop="5dp"
+                           android:orientation="horizontal">
+                           <Button
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="5dp"
+                               android:paddingTop="7dp"
+                               android:paddingBottom="7dp"
+                               android:textSize="@dimen/btn_txt_small"
+                               android:layout_weight="1.0"
+                               android:id="@+id/b_edit"
+                               android:background="#ebebeb"
+                               android:text="Edit"/>
+                           <Button
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="5dp"
+                               android:paddingTop="7dp"
+                               android:paddingBottom="7dp"
+
+                               android:layout_weight="1.0"
+                               android:background="#ebebeb"
+                               android:id="@+id/b_dlt"
+                               android:textSize="@dimen/btn_txt_small"
+                               android:layout_marginRight="5dp"
+                               android:layout_marginLeft="10dp"
+                               android:text="Delete"/>
+                       </LinearLayout>
+                   </LinearLayout>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@drawable/xml_button_trans_rect_bg_selector"
+                       android:duplicateParentState="true"
+                       android:gravity="center_vertical|left"
+                       android:layout_gravity="center"
+                       android:paddingLeft="15dp"
+                       android:id="@+id/add_work"
+                       android:paddingRight="10dp"
+                       android:paddingBottom="20dp"
+                       android:paddingTop="20dp"
+                       android:textColor="#000000"
+                       android:text="@string/yourdetails_Add_work"
+                       android:textSize="@dimen/button_font_size" />
+               </FrameLayout>
+               <FrameLayout
+                   android:id="@+id/fm_btn_frequent"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:layout_marginTop="-1dp"
+                   android:background="@drawable/xml_rect_boundry" >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:paddingLeft="10dp"
+                       android:id="@+id/layout_txt2"
+                       android:paddingTop="5dp"
+                       android:visibility="gone"
+                       android:orientation="vertical">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/text_default_color"
+                           android:paddingTop="1dp"
+                           android:textSize="@dimen/txt_small"
+                           android:id="@+id/c_adre"
+                           android:text="Other Frequented Address"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:id="@+id/c_adresa"
+                           android:textSize="@dimen/txt_small"
+                           android:textColor="@color/text_default_color"
+                           android:text="kentn park garden"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:id="@+id/c_adresb"
+                           android:textSize="@dimen/txt_small"
+                           android:textColor="@color/text_default_color"
+                           android:text="Flat 5,golden house"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:paddingTop="1dp"
+                           android:id="@+id/c_adresc"
+                           android:textSize="@dimen/txt_small"
+                           android:textColor="@color/text_default_color"
+                           android:text="London,12202022"/>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginTop="5dp"
+                           android:orientation="horizontal">
+                           <Button
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="5dp"
+                               android:paddingTop="7dp"
+                               android:paddingBottom="7dp"
+                               android:textSize="@dimen/btn_txt_small"
+                               android:layout_weight="1.0"
+                               android:background="#ebebeb"
+                               android:id="@+id/c_edit"
+                               android:text="Edit"/>
+                           <Button
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="5dp"
+                               android:paddingTop="7dp"
+                               android:paddingBottom="7dp"
+                               android:textSize="@dimen/btn_txt_small"
+                               android:layout_weight="1.0"
+                               android:layout_marginLeft="10dp"
+                               android:id="@+id/c_dlt"
+                               android:background="#ebebeb"
+                               android:layout_marginRight="5dp"
+                               android:text="Delete"/>
+                       </LinearLayout>
+                   </LinearLayout>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@drawable/xml_button_trans_rect_bg_selector"
+                       android:duplicateParentState="true"
+                       android:gravity="center_vertical|left"
+                       android:layout_gravity="center"
+                       android:paddingLeft="15dp"
+                       android:paddingRight="10dp"
+                       android:paddingBottom="20dp"
+                       android:id="@+id/add_frequent"
+                       android:paddingTop="20dp"
+                       android:textColor="#000000"
+                       android:text="@string/yourdetails_Add_frequent"
+                       android:textSize="@dimen/button_font_size" />
+               </FrameLayout>
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+    </ScrollView>
+ </LinearLayout>
+</RelativeLayout>

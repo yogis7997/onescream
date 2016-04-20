@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/raw/policesiren.mp3",
+        "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/res/raw/policesiren.mp3"
+    }
+]

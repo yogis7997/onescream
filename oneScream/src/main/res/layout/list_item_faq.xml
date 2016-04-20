@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/frm_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_faq_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="2"
+            android:text="How can I work?"
+             android:textColor="#344251"
+            android:textSize="@dimen/faq_header" />
+
+        <TextView
+            android:id="@+id/tv_faq_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="15"
+            android:text="Loren ipsum ..."
+android:textColor="#344251"
+ 
+        android:textSize="@dimen/faq_content" 
+         />
+    </LinearLayout>
+
+</RelativeLayout>

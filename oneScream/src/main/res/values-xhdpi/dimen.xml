@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen name="faq_header">19sp</dimen>
+               <dimen name="faq_content">15sp</dimen>
+      <dimen name="faq_title">23sp</dimen>
+           <dimen name="detected_counter_size">141sp</dimen>
+    <dimen name="tap">10sp</dimen>
+
+    <dimen name="txt_content">16sp</dimen>
+    <dimen name="sky_height">250dp</dimen>
+    <dimen name="sky_height_reg">230dp</dimen>
+    <dimen name="txt_small">11sp</dimen>
+    <dimen name="btn_txt_small">13dp</dimen>
+      
+</resources>
