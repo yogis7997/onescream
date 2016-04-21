@@ -12,6 +12,7 @@ import android.widget.ImageView;
 
 import com.onescream.HomeActivity;
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 import com.onescream.login.LoginActivity;
 import com.onescream.login.SignupActivity;
 import com.parse.ParseUser;
@@ -43,7 +44,7 @@ public class TourActivity extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstscreen);
-
+        Utility.RegisterScreen(this, getResources().getString(R.string.tour));
 
         Bundle extras = getIntent().getExtras();
         boolean value = false;

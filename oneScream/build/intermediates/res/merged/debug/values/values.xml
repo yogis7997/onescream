@@ -329,7 +329,7 @@
     <integer name="default_underline_indicator_fade_length">400</integer>
     <integer name="google_play_services_version">8487000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <string name="FAQ">FAQs</string>
+    <string name="FAQ">FAQ\'s</string>
     <string name="GPSAlertDialogMessage">Please enable GPS/network in settings</string>
     <string name="GPSAlertDialogTitle">GPS Error</string>
     <string name="Listening">Listening</string>
@@ -455,10 +455,12 @@ force for good for others!
     <string name="intro_title4n">\nThe good news is One Scream can hear you from a distance, and you will still be protected if your phone is buried in your bag.</string>
     <string name="intro_title5">We think you should know:</string>
     <string name="label_one_scream">0ne Scream</string>
+    <string name="landing">Landing</string>
     <string name="license_agree_btn">I Agree</string>
     <string name="license_privacy_btn">Privacy Policy</string>
     <string name="license_text1">You can feel safer now. By signing up you agree to our terms and conditions.</string>
     <string name="license_toc_btn">Terms &amp; Conditions</string>
+    <string name="listening">Listening</string>
     <string name="login_btn">Submit</string>
     <string name="login_fb_btn">Facebook Login</string>
     <string name="login_signup_btn">Create One Now</string>
@@ -485,7 +487,7 @@ force for good for others!
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="privacy_sub_title">Privacy Policy</string>
     <string name="privacy_title">Privacy Policy</string>
-    <string name="raedy_page">Ready?</string>
+    <string name="ready_page">Ready?</string>
     <string name="reset_password_btn_text">Request Reset Link</string>
     <string name="reset_password_btn_thanks">Thanks!</string>
     <string name="reset_password_error_text">We couldn\'t find the email</string>
@@ -493,7 +495,7 @@ force for good for others!
     <string name="reset_password_text">Enter your email address and we\'ll get you back on track.</string>
     <string name="reset_text">Reset password</string>
     <string name="reset_text2">Forgot your login details?</string>
-    <string name="segment_key">qz2ZhvHFW9LU4Ct6EhD3gbH6Vmq69bfO</string>
+    <string name="segment_key">0kU5WF6KG3bL7IiKdC0JbTf2RyVJzqvI</string>
     <string name="setting_submenu_about">About</string>
     <string name="settings_header_aboutus">ABOUT US</string>
     <string name="settings_header_support">SUPPORT</string>

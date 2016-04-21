@@ -46,8 +46,8 @@ public final class R {
 		public static final int top = 0x7f0c002f;
 	}
 	public static final class string {
-		public static final int md__drawerClosedIndicatorDesc = 0x7f06008e;
-		public static final int md__drawerOpenIndicatorDesc = 0x7f06008f;
+		public static final int md__drawerClosedIndicatorDesc = 0x7f060090;
+		public static final int md__drawerOpenIndicatorDesc = 0x7f060091;
 	}
 	public static final class style {
 		public static final int Widget = 0x7f09010b;

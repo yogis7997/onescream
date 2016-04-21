@@ -11,16 +11,20 @@ import android.widget.ImageView;
 
 import com.onescream.HomeActivity;
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 import com.onescream.login.LoginActivity;
 import com.onescream.login.SignupActivity;
 import com.parse.ParseUser;
+import com.segment.analytics.Analytics;
+import com.segment.analytics.Properties;
+import com.segment.analytics.Traits;
 import com.uc.prjcmn.ActivityTask;
 import com.uc.prjcmn.SharedPreferencesMgr;
 
 /**
  * Activity class for First Screen appeared when the user downloaded (including
  * swipe-able pages)
- * <p/>
+ * <p>
  * Created by Anwar Almojarkesh
  */
 public class FirstScreenActivity extends FragmentActivity implements
@@ -43,7 +47,7 @@ public class FirstScreenActivity extends FragmentActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        Analytics.with(this).screen("Activity", getResources().getString(R.string.signing_in), new Properties().putValue("Log", ""));
+//        Utility.RegisterScreen(this, getResources().getString(R.string.signing_in));
 
 
         ActivityTask.INSTANCE.add(this);
@@ -65,7 +69,9 @@ public class FirstScreenActivity extends FragmentActivity implements
 
         } else {
             Log.e("First ", " username== " + user.getUsername());
-//            Analytics.with(FirstScreenActivity.this).identify(new Traits().putName(user.getUsername()).putEmail(user.getEmail()));
+            Utility.RegisterScreen(this, getResources().getString(R.string.landing));
+//            Analytics.with(FirstScreenActivity.this).identify("email:"+user.getEmail(), new Traits().putName("a user's name"), null);
+//            Analytics.with(FirstScreenActivity.this).identify("",new Traits().putName(user.getUsername()).putEmail(user.getEmail()));
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {

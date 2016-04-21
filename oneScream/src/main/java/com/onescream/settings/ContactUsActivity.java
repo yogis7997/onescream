@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.onescream.HomeActivity;
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 import com.uc.prjcmn.ActivityTask;
 
 /**
@@ -35,6 +36,7 @@ public class ContactUsActivity extends Activity implements View.OnClickListener 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Utility.RegisterScreen(this, getResources().getString(R.string.contact));
 		setContentView(R.layout.activity_contact_us);
 		ActivityTask.INSTANCE.add(this);
 

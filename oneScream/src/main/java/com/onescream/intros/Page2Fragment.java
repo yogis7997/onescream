@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 
 /**
  * Fragment class for Page2 of First Screen
@@ -27,6 +28,7 @@ public final class Page2Fragment extends Fragment implements OnClickListener{
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.about_intro));
 
 //
 	}

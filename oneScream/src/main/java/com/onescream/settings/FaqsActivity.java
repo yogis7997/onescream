@@ -21,6 +21,7 @@ import java.util.ArrayList;
 
 import com.onescream.HomeActivity;
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 import com.uc.prjcmn.ActivityTask;
 
 /**
@@ -47,6 +48,7 @@ public class FaqsActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Utility.RegisterScreen(this, getResources().getString(R.string.FAQ));
         setContentView(R.layout.activity_faqs);
         ActivityTask.INSTANCE.add(this);
 

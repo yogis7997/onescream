@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.onescream.HomeActivity;
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 import com.onescream.intros.FirstScreenActivity;
 import com.onescream.intros.ThankyouActivity;
 import com.parse.FindCallback;
@@ -50,8 +51,11 @@ public class FrequentAddress extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_addressthree);
-         sharedpreferences = getSharedPreferences(pref_name, Context.MODE_PRIVATE);
+        Utility.RegisterScreen(this,getResources().getString(R.string.frequesnted_address));
+
+        sharedpreferences = getSharedPreferences(pref_name, Context.MODE_PRIVATE);
          editor = sharedpreferences.edit();
 
         updateLcd();

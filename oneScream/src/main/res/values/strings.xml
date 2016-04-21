@@ -224,12 +224,12 @@ force for good for others!
     <string name="about_invite">Invite Friends</string>
     <string name="about_one">onescream.com</string>
     <string name="about_title">About</string>
-    <string name="segment_key">qz2ZhvHFW9LU4Ct6EhD3gbH6Vmq69bfO</string>
+    <string name="segment_key">0kU5WF6KG3bL7IiKdC0JbTf2RyVJzqvI</string>
     <string name="signing_in">Login Screen</string>
     <string name="about_intro">Tour Screen 1</string>
     <string name="about_how">Tour Screen 2</string>
     <string name="about_not_hear_you">Tour Screen 3</string>
-    <string name="raedy_page">Ready?</string>
+    <string name="ready_page">Ready?</string>
     <string name="frequesnted_address">Frequented addresses input</string>
     <string name="one_more_thing">One more thing</string>
     <string name="Listening">Listening</string>
@@ -239,7 +239,9 @@ force for good for others!
     <string name="contact">Contact</string>
     <string name="tour">Tour</string>
     <string name="about">About</string>
-    <string name="FAQ">FAQs</string>
+    <string name="FAQ">FAQ\'s</string>
+    <string name="landing">Landing</string>
+    <string name="listening">Listening</string>
 
 
 </resources>

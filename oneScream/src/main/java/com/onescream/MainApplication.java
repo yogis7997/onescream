@@ -15,6 +15,7 @@ import java.util.GregorianCalendar;
 import com.onescream.engine.UniversalScreamEngine;
 import com.onescream.service.OneScreamService;
 
+import com.segment.analytics.Analytics;
 import com.uc.prjcmn.GlobalValues;
 import com.uc.prjcmn.PRJCONST;
 import com.uc.prjcmn.PRJFUNC;
@@ -39,8 +40,8 @@ public class MainApplication extends Application {
 //		ACRA.init(this);
         m_Context = getApplicationContext();
 
-//        Analytics analytics = new Analytics.Builder(m_Context, getResources().getString(R.string.segment_key)).build();
-//        Analytics.setSingletonInstance(analytics);
+        Analytics analytics = new Analytics.Builder(m_Context, getResources().getString(R.string.segment_key)).build();
+        Analytics.setSingletonInstance(analytics);
 
 
 

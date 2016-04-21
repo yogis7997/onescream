@@ -12,102 +12,106 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 
 /**
  * Fragment class for Page1 of First Screen
- *
+ * <p/>
  * Created by Anwar Almojarkesh
  */
 public final class Page1Fragment extends Fragment implements OnClickListener {
-	Typeface facethin,facebold,faceRegular,EstiloRegular,faceMedium,sanfacesemibold;
-	public interface FragmentListener {
-		public void clickListner(String Value);
-	}FragmentListener mListener;
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-	}
+    Typeface facethin, facebold, faceRegular, EstiloRegular, faceMedium, sanfacesemibold;
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+    public interface FragmentListener {
+        public void clickListner(String Value);
+    }
 
-		final View v = inflater.inflate(R.layout.fragment_page1, container,
-				false);
+    FragmentListener mListener;
 
-		initTypeFace();
-		updateLCD(v);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
-		return v;
-	}
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        Utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.landing));
+        final View v = inflater.inflate(R.layout.fragment_page1, container,
+                false);
 
-	private void updateLCD(View v) {
+        initTypeFace();
+        updateLCD(v);
 
-		try {
-			// Instantiate the Listener so we can send events to the host
-			mListener = (FragmentListener) getActivity();
-		} catch (ClassCastException e) {
-			// The activity doesn't implement the interface, throw exception
-			throw new ClassCastException(getActivity().toString()
-					+ " must implement cadlrDialogListener");
-		}
-		
-			TextView SignIn_tv = (TextView) v.findViewById(R.id.tv_btn_login);
-			SignIn_tv.setTypeface(sanfacesemibold);
-			TextView Register_tv = (TextView) v.findViewById(R.id.tv_btn_signup);
-			Register_tv.setTypeface(sanfacesemibold);
-			TextView text = (TextView) v.findViewById(R.id.text);
-			text.setTypeface(faceMedium);
+        return v;
+    }
+
+    private void updateLCD(View v) {
+
+        try {
+            // Instantiate the Listener so we can send events to the host
+            mListener = (FragmentListener) getActivity();
+        } catch (ClassCastException e) {
+            // The activity doesn't implement the interface, throw exception
+            throw new ClassCastException(getActivity().toString()
+                    + " must implement cadlrDialogListener");
+        }
+
+        TextView SignIn_tv = (TextView) v.findViewById(R.id.tv_btn_login);
+        SignIn_tv.setTypeface(sanfacesemibold);
+        TextView Register_tv = (TextView) v.findViewById(R.id.tv_btn_signup);
+        Register_tv.setTypeface(sanfacesemibold);
+        TextView text = (TextView) v.findViewById(R.id.text);
+        text.setTypeface(faceMedium);
 //		 labelTitle.setTypeface(EstiloRegular);
-		
-		View frmBtnLogin = v.findViewById(R.id.frm_btn_login);
-		frmBtnLogin.setOnClickListener(this);
 
-		View frmBtnSignup = v.findViewById(R.id.frm_btn_signup);
-		frmBtnSignup.setOnClickListener(this);
+        View frmBtnLogin = v.findViewById(R.id.frm_btn_login);
+        frmBtnLogin.setOnClickListener(this);
 
-		if (((FirstScreenActivity)getActivity()).m_bInTour) {
-			frmBtnLogin.setVisibility(View.GONE);
-			frmBtnSignup.setVisibility(View.GONE);
-		}
-	}
+        View frmBtnSignup = v.findViewById(R.id.frm_btn_signup);
+        frmBtnSignup.setOnClickListener(this);
 
-	@Override
-	public void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
-	}
+        if (((FirstScreenActivity) getActivity()).m_bInTour) {
+            frmBtnLogin.setVisibility(View.GONE);
+            frmBtnSignup.setVisibility(View.GONE);
+        }
+    }
 
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-			case R.id.frm_btn_signup:
-				mListener.clickListner("1");
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.frm_btn_signup:
+                mListener.clickListner("1");
 //				((FirstScreenActivity)getActivity()).goToSignupActivity(false);
-				break;
-			case R.id.frm_btn_login:
-				((FirstScreenActivity)getActivity()).goToLoginActivity();
-				break;
-		default:
-			break;
-		}
-	}
+                break;
+            case R.id.frm_btn_login:
+                ((FirstScreenActivity) getActivity()).goToLoginActivity();
+                break;
+            default:
+                break;
+        }
+    }
 
-	private void initTypeFace()
-	{
-		  facethin = Typeface.createFromAsset(getActivity().getAssets(),
-			"fonts/Roboto-Thin.ttf");
-		faceMedium = Typeface.createFromAsset(getActivity().getAssets(),
-				"fonts/Roboto-Medium.ttf");
-		  facebold =  Typeface.createFromAsset(getActivity()	.getAssets(),
-			"fonts/SanFranciscoDisplay-Bold.otf");
+    private void initTypeFace() {
+        facethin = Typeface.createFromAsset(getActivity().getAssets(),
+                "fonts/Roboto-Thin.ttf");
+        faceMedium = Typeface.createFromAsset(getActivity().getAssets(),
+                "fonts/Roboto-Medium.ttf");
+        facebold = Typeface.createFromAsset(getActivity().getAssets(),
+                "fonts/SanFranciscoDisplay-Bold.otf");
 
-		faceRegular = Typeface.createFromAsset(getActivity().getAssets(),
-	            "fonts/Roboto-Regular.ttf");
-		  EstiloRegular = Typeface.createFromAsset(getActivity().getAssets(),
-		            "fonts/EstiloRegular.otf");
-		sanfacesemibold = Typeface.createFromAsset(getActivity()
-						.getAssets(),
-				"fonts/SanFranciscoDisplay-Semibold.otf");
+        faceRegular = Typeface.createFromAsset(getActivity().getAssets(),
+                "fonts/Roboto-Regular.ttf");
+        EstiloRegular = Typeface.createFromAsset(getActivity().getAssets(),
+                "fonts/EstiloRegular.otf");
+        sanfacesemibold = Typeface.createFromAsset(getActivity()
+                        .getAssets(),
+                "fonts/SanFranciscoDisplay-Semibold.otf");
 
-	}
+    }
 }

@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 import com.onescream.settings.AddAdressActivity;
 import com.onescream.settings.WiFiItemsActivity;
 import com.parse.FindCallback;
@@ -50,7 +51,7 @@ public class AddressFragment extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_address_one);
-
+        Utility.RegisterScreen(this,getResources().getString(R.string.frequesnted_address));
         Bundle extras = getIntent().getExtras();
 
         if (extras != null) {

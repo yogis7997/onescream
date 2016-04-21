@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.onescream.HomeActivity;
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 import com.uc.prjcmn.ActivityTask;
 
 public class About extends Activity implements View.OnClickListener {
@@ -22,6 +23,7 @@ public class About extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Utility.RegisterScreen(this, getResources().getString(R.string.about));
         setContentView(R.layout.activity_about);
         ActivityTask.INSTANCE.add(this);
 

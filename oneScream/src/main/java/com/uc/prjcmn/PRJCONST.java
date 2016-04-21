@@ -7,12 +7,12 @@ package com.uc.prjcmn;
  *
  */
 
-public interface PRJCONST {
+public class PRJCONST {
 	public static final boolean isTesting = true;
 	
 	public static final int FREE_USE_DAYS = 14;
 	
-	public static final String DEFAULT_PASSWORD = "onescream";
+	public static String DEFAULT_PASSWORD = "";
 	
 	
 	// -- Screen size --

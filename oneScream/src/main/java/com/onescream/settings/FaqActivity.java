@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.onescream.R;
 
+import com.onescream.Utils.Utility;
 import com.uc.prjcmn.ActivityTask;
 
 /**
@@ -55,6 +56,7 @@ public class FaqActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_faq);
         ActivityTask.INSTANCE.add(this);
 

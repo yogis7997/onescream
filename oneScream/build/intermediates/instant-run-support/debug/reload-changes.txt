@@ -1,4 +1,0 @@
-CHANGED,/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/onescream/intros/TourActivity$override.class
-CHANGED,/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/onescream/intros/TourActivity$1$override.class
-CHANGED,/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/onescream/intros/FirstScreenActivity$override.class

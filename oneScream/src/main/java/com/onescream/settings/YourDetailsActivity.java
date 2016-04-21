@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.onescream.HomeActivity;
+import com.onescream.Utils.Utility;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
@@ -51,6 +52,7 @@ public class YourDetailsActivity extends Activity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Utility.RegisterScreen(this, getResources().getString(R.string.personal_info));
         setContentView(R.layout.activity_new_your_details);
         ActivityTask.INSTANCE.add(this);
 

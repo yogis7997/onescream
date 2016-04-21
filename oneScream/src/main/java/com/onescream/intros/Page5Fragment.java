@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.onescream.HomeActivity;
 import com.onescream.R;
+import com.onescream.Utils.Utility;
 
 /**
  * Fragment class for Page5 of First Screen
@@ -30,7 +31,7 @@ public final class Page5Fragment extends Fragment implements OnClickListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		Utility.RegisterScreen(getActivity(),getActivity().getResources().getString(R.string.one_more_thing));
 	}
 
 	@Override

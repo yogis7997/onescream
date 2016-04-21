@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.onescream.HomeActivity;
 import com.onescream.R;
+import com.onescream.Utils.Utility;
+
 public class TourLastActivity extends Activity implements View.OnClickListener {
     Typeface facethin,facebold,faceRegular,EstiloRegular,faceMedium;
     Typeface sanfacebold,sanfaceRegular, sanfaceMedium,sanfacesemibold,proximasemi;
@@ -20,6 +22,7 @@ public class TourLastActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Utility.RegisterScreen(this,getResources().getString(R.string.one_more_thing));
         setContentView(R.layout.activity_tour_new);
         updateLCD();
     }
