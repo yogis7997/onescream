@@ -41,6 +41,6 @@ dependencies {
     compile 'com.parse:parse-android:1.13.0'
 //    compile files('libs/Parse-1.10.2.jar')
 //    compile 'com.parse.bolts:bolts-android:1.2.1'
-//    compile 'com.segment.analytics.android:analytics:4.+'
+    compile 'com.segment.analytics.android:analytics:4.+'
     compile 'org.apache.commons:commons-collections4:4.0'
 }
