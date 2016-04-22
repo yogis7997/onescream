@@ -4,58 +4,29 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="55951322498684"
-    verifier="COMPATIBLE" >
+    timestamp="68439502801851" >
 
     <task
         name="javac"
-        duration="2434" />
+        duration="10839" />
     <task
         name="instant-run-dex"
-        duration="1636" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="153" />
+        duration="6125" />
     <task
         name="verifier"
-        duration="29" />
+        duration="704" />
 
     <artifact
-        location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/outputs/apk/oneScream-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="49283851380353" >
+    <build timestamp="68439502801851" >
         <artifact
             location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/outputs/apk/oneScream-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="53753127391916"
-        verifier="FIELD_TYPE_CHANGE" >
-        <artifact
-            location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="55223752012521" >
-        <artifact
-            location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="55951322498684"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
