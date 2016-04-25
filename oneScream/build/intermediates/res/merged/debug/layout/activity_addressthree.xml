@@ -222,7 +222,7 @@
                        android:paddingLeft="10dp"
                        android:paddingTop="5dp"
                        android:id="@+id/layout_txt1"
-                       android:visibility="gone"
+                       android:visibility="visible"
                        android:orientation="vertical">
                        <TextView
                            android:layout_width="wrap_content"
@@ -303,6 +303,7 @@
                        android:paddingBottom="20dp"
                        android:paddingTop="20dp"
                        android:textColor="#000000"
+                       android:visibility="gone"
                        android:text="@string/yourdetails_Add_work"
                        android:textSize="@dimen/button_font_size" />
                </FrameLayout>

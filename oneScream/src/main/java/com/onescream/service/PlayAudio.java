@@ -18,7 +18,7 @@ import com.onescream.R;
  */
 
 public class PlayAudio extends Service {
-	private static final String LOGCAT = null;
+	private static final String LOGCAT = "PlayAudio";
 	MediaPlayer objPlayer;
 	private boolean looping = true;
 
@@ -39,11 +39,12 @@ public class PlayAudio extends Service {
 
 			objPlayer.start();
 
-			Log.d(LOGCAT, "Media Player started!");
+			Log.e(LOGCAT, "Media Player started!");
 			if (objPlayer.isLooping() != true) {
-				Log.d(LOGCAT, "Problem in Playing Audio");
+				Log.e(LOGCAT, "Problem in Playing Audio");
 			}
 		} catch (Exception e) {
+			Log.e(LOGCAT," audio exception"+e.getMessage());
 			e.printStackTrace();
 		}
 	}

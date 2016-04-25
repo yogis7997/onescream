@@ -1294,6 +1294,7 @@ int layout support_simple_spinner_dropdown_item 0x7f030055
 int layout update_frequent_address 0x7f030056
 int raw gtm_analytics 0x7f050000
 int raw policesiren 0x7f050001
+int raw policesiren1 0x7f050002
 int string FAQ 0x7f06003f
 int string GPSAlertDialogMessage 0x7f060040
 int string GPSAlertDialogTitle 0x7f060041

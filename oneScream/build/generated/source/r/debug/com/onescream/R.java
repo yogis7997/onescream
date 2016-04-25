@@ -3181,6 +3181,7 @@ containing a value of this type.
     public static final class raw {
         public static final int gtm_analytics=0x7f050000;
         public static final int policesiren=0x7f050001;
+        public static final int policesiren1=0x7f050002;
     }
     public static final class string {
         public static final int FAQ=0x7f06003f;

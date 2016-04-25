@@ -37,7 +37,7 @@ import java.util.GregorianCalendar;
 
 /**
  * Fragment class for Page4 of First Screen
- * <p>
+ * <p/>
  * Created by Anwar Almojarkesh
  */
 public final class RegisterFragment extends Fragment implements View.OnClickListener {
@@ -130,8 +130,11 @@ public final class RegisterFragment extends Fragment implements View.OnClickList
 
     private void hideKeyboard() {
         View view = getActivity().getCurrentFocus();
-        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+
     }
 
     @Override

@@ -192,7 +192,8 @@ public class DetectedScreamActivity extends Activity implements
 
         GlobalValues.sharedInstance()._bEnabledActivity = false;
         ActivityTask.INSTANCE.remove(this);
-
+        Intent intent = new Intent(this, PlayAudio.class);
+        stopService(intent);
         super.onDestroy();
     }
 

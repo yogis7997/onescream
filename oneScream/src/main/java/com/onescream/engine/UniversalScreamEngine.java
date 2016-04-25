@@ -534,11 +534,14 @@ public class UniversalScreamEngine {
 			m_nUnivEngineInvalidCnt = 1000;
 		}
 
-		Log.i("TAG", String.format(
+		Log.i("Screaming", String.format(
 				"max_val=%.3f       frame_cnt=%d,       invalid_cnt=%d,          repeatcnt=%d",
 				maxVals[0], m_nUnivEngineFrameCnt, m_nUnivEngineInvalidCnt,
 				m_nUnivEngineRepeatCnt));
-
+//		Log.e("YogiScream", String.format(
+//				"max_val=%.3f       frame_cnt=%d,       invalid_cnt=%d,          repeatcnt=%d",
+//				maxVals[0], m_nUnivEngineFrameCnt, m_nUnivEngineInvalidCnt,
+//				m_nUnivEngineRepeatCnt));
 		if (m_bDetected) {
 			GlobalValues.sharedInstance().m_strDetectedAddress = null;
 			GlobalValues.sharedInstance().m_strDetectedLocation = null;

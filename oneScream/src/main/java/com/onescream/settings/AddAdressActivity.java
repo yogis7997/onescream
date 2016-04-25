@@ -357,23 +357,23 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
 
                 if (Type_screen.equalsIgnoreCase("1")) {
                     if (object_id1 == null || object_id1.trim().equalsIgnoreCase("")) {
-                        updateInformation(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Home");
+                        addHomeInformation(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Home");
                     } else {
-                        addInformation(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Work");
+                        updateHomeInformation(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Work");
                     }
                 }
                 if (Type_screen.equalsIgnoreCase("2")) {
                     if (object_id2 == null || object_id2.trim().equalsIgnoreCase("")) {
-                        updateworkaddres(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Work");
+                        addWorkaddres(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Work");
                     } else {
-                        addWorkInformation(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Work");
+                        updateWorkAddress(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Work");
                     }
                 }
                 if (Type_screen.equalsIgnoreCase("3")) {
                     if (object_id3 == null || object_id3.trim().equalsIgnoreCase("")) {
-                        updateotheraddres(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Other");
+                        addOtherAddress(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Other");
                     } else {
-                        addFreqInformation(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Work");
+                        updateFreqAddress(strAddress1, strAddress2, strAddress3, strAddress4, strAddress5, strAddress6, "Work");
                     }
                 }
 
@@ -420,7 +420,7 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
         }
     }
 
-    private void addWorkInformation(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
+    private void updateWorkAddress(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
 
         ParseQuery query = new ParseQuery("UserAddress");
         PRJFUNC.showProgress(AddAdressActivity.this, "");
@@ -428,16 +428,17 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
 
 
             @Override
-            public void done(ParseObject object, ParseException e) {
+            public void done(ParseObject user, ParseException e) {
                 if (e == null) {
 
-                    object.put("streetAddress1", strAddress1);
-                    object.put("streetAddress2", strAddress2);
-                    object.put("postal", strAddress6);
-                    object.put("city", strAddress4);
-                    object.put("apt_flat", strAddress3);
-                    object.put("addressType", "Home");
-                    object.saveInBackground(new SaveCallback() {
+                    user.put("streetAddress1", strAddress2);
+                    user.put("streetAddress2", strAddress3);
+                    user.put("postal", strAddress6);
+                    user.put("city", strAddress4);
+                    user.put("state", strAddress5);
+                    user.put("addressType", "work");
+                    user.put("businessName", strAddress1);
+                    user.saveInBackground(new SaveCallback() {
                         public void done(ParseException e) {
                             if (e != null) {
                                 Log.e("a", ""+e.getMessage());
@@ -478,23 +479,24 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
 
     }
 
-    private void addFreqInformation(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
+    private void updateFreqAddress(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
         ParseQuery query = new ParseQuery("UserAddress");
         PRJFUNC.showProgress(AddAdressActivity.this, "");
         query.getInBackground(object_id3, new GetCallback<ParseObject>() {
 
 
             @Override
-            public void done(ParseObject object, ParseException e) {
+            public void done(ParseObject user, ParseException e) {
                 if (e == null) {
 
-                    object.put("streetAddress1", strAddress2);
-                    object.put("streetAddress2", strAddress3);
-                    object.put("postal", strAddress6);
-                    object.put("city", strAddress4);
-                    object.put("businessName", strAddress1);
-                    object.put("addressType", "Work");
-                    object.saveInBackground(new SaveCallback() {
+                    user.put("streetAddress1", strAddress1);
+                    user.put("streetAddress2", strAddress2);
+                    user.put("postal", strAddress6);
+                    user.put("city", strAddress4);
+                    user.put("apt_flat", strAddress3);
+                    user.put("state", strAddress5);
+                    user.put("addressType", "other");
+                    user.saveInBackground(new SaveCallback() {
                         public void done(ParseException e) {
                             if (e != null) {
                                 Log.d("a", "");
@@ -538,7 +540,7 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
 
     }
 
-    private void addInformation(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
+    private void updateHomeInformation(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
 
 
         ParseQuery query = new ParseQuery("UserAddress");
@@ -555,6 +557,7 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
                     object.put("city", strAddress4);
                     object.put("apt_flat", strAddress3);
                     object.put("addressType", "Home");
+                    object.put("state", strAddress5);
                     object.saveInBackground(new SaveCallback() {
                         public void done(ParseException e) {
                             if (e != null) {
@@ -611,15 +614,16 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
 
     }
 
-    private void updateotheraddres(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
+    private void addOtherAddress(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
         final ParseObject user = new ParseObject("UserAddress");
 //        user.put("objectId", getu.getObjectId());
         user.put("streetAddress1", strAddress1);
-        user.put("streetAddress1", strAddress2);
+        user.put("streetAddress2", strAddress2);
         user.put("postal", strAddress6);
         user.put("city", strAddress4);
         user.put("apt_flat", strAddress3);
-        user.put("addressType", work);
+        user.put("state", strAddress5);
+        user.put("addressType", "other");
         PRJFUNC.showProgress(AddAdressActivity.this, "");
         user.saveInBackground(new SaveCallback() {
             public void done(ParseException e) {
@@ -656,15 +660,15 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
 //        });
     }
 
-    private void updateworkaddres(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
+    private void addWorkaddres(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String work) {
         final ParseObject user = new ParseObject("UserAddress");
 //        user.put("objectId", getu.getObjectId());
         user.put("streetAddress1", strAddress2);
         user.put("streetAddress2", strAddress3);
         user.put("postal", strAddress6);
         user.put("city", strAddress4);
-
-        user.put("addressType", work);
+        user.put("state", strAddress5);
+        user.put("addressType", "work");
         user.put("businessName", strAddress1);
         PRJFUNC.showProgress(AddAdressActivity.this, "");
         user.saveInBackground(new SaveCallback() {
@@ -706,7 +710,7 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
     }
 
 
-    public void updateInformation(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String home) {
+    public void addHomeInformation(final String strAddress1, final String strAddress2, final String strAddress3, final String strAddress4, final String strAddress5, final String strAddress6, String home) {
         final ParseObject user = new ParseObject("UserAddress");
 //        user.put("objectId", getu.getObjectId());
         user.put("streetAddress1", strAddress1);
@@ -715,6 +719,7 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
         user.put("city", strAddress4);
         user.put("apt_flat", strAddress3);
         user.put("addressType", "Home");
+        user.put("state", strAddress5);
 
         PRJFUNC.showProgress(AddAdressActivity.this, "");
         user.saveInBackground(new SaveCallback() {
@@ -744,6 +749,7 @@ public class AddAdressActivity extends Activity implements View.OnClickListener 
            usernew.put("streetAddress2", strAddress2);
            usernew.put("postal", strAddress6);
            usernew.put("city", strAddress4);
+
            usernew.put("apt_flat", strAddress3);
            usernew.put("addressType", "Home");
        }
