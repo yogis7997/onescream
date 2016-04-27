@@ -25,7 +25,7 @@ public class Utility {
 
         try{
             final ParseUser user = ParseUser.getCurrentUser();
-            Analytics.with(context).identify("email:" + user.getEmail(), new Traits().putName(user.getUsername()).putEmail(user.getEmail()), null);
+            Analytics.with(context).identify("email:" + user.getEmail(), new Traits().putName(user.getString("first_name")).putEmail(user.getEmail()), null);
 
             Analytics.with(context).screen("Activity", string, new Properties().putValue(string, string));
 //            Analytics.with(context).track(string, new Properties().putValue(string, string));
