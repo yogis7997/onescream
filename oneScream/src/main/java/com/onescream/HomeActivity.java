@@ -50,8 +50,7 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParsePush;
 import com.parse.ParseUser;
-import com.segment.analytics.Analytics;
-import com.segment.analytics.Properties;
+
 import com.uc.prjcmn.ActivityTask;
 import com.uc.prjcmn.GPSTracker;
 import com.uc.prjcmn.GlobalValues;
@@ -104,6 +103,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
     private boolean m_bNeedSubscribe;
 
     private boolean m_bWiFiPopuped = false;
+    private Utility utility;
     Typeface facethin, facebold, faceRegular, EstiloRegular, sanfaceRegular, sanfacesemibold;
 
     // ////////////////////////////////////////////////////////////
@@ -112,7 +112,8 @@ public class HomeActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityTask.INSTANCE.add(this);
-        Utility.RegisterScreen(this, getResources().getString(R.string.standing_by));
+        utility = new Utility(this);
+        utility.RegisterScreen(this, getResources().getString(R.string.standing_by));
         screen_rate = getResources().getDisplayMetrics().density;
 
         mDrawer = MenuDrawer.attach(this);
@@ -618,7 +619,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
 
     private void updateUIForDetectState() {
         if (GlobalValues.sharedInstance().m_bDetecting) {
-            Utility.RegisterScreen(this, getResources().getString(R.string.listening));
+            utility.RegisterScreen(this, getResources().getString(R.string.listening));
             m_tvTitle.setText("Not to Worry");
             m_tvDetectStatus.setText("You are being protected by One Scream");
 
@@ -628,7 +629,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
             makeSmallPlanet();
 
         } else {
-            Utility.RegisterScreen(this, getResources().getString(R.string.standing_by));
+            utility.RegisterScreen(this, getResources().getString(R.string.standing_by));
             m_tvTitle.setText("Standing By");
             m_tvDetectStatus.setText("Press play and we will listen");
 

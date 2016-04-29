@@ -25,11 +25,13 @@ public final class Page4Fragment extends Fragment implements OnClickListener {
 			,sanfaceMedium, proximasemi;
 
 	boolean getValue = false;
+	private Utility utility;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.about_not_hear_you));
+		utility = new Utility(getActivity());
+		utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.about_not_hear_you));
 
 
 	}

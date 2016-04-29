@@ -27,11 +27,13 @@ public final class Page5Fragment extends Fragment implements OnClickListener {
 	ImageView Indicator6,Indicator5;
 	boolean getValue=false;
 	Typeface sanfacebold,sanfaceRegular, sanfaceMedium,sanfacesemibold,proximasemi;
+	private Utility utility;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Utility.RegisterScreen(getActivity(),getActivity().getResources().getString(R.string.one_more_thing));
+		utility = new Utility(getActivity());
+		utility.RegisterScreen(getActivity(),getActivity().getResources().getString(R.string.one_more_thing));
 	}
 
 	@Override

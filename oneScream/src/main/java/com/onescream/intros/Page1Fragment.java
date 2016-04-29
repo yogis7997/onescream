@@ -21,6 +21,7 @@ import com.onescream.Utils.Utility;
  */
 public final class Page1Fragment extends Fragment implements OnClickListener {
     Typeface facethin, facebold, faceRegular, EstiloRegular, faceMedium, sanfacesemibold;
+    private Utility utility;
 
     public interface FragmentListener {
         public void clickListner(String Value);
@@ -36,7 +37,8 @@ public final class Page1Fragment extends Fragment implements OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.landing));
+        utility = new Utility(getActivity());
+        utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.landing));
         final View v = inflater.inflate(R.layout.fragment_page1, container,
                 false);
 

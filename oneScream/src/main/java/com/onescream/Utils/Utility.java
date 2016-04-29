@@ -8,6 +8,9 @@ import com.parse.ParseUser;
 import com.segment.analytics.Analytics;
 import com.segment.analytics.Properties;
 import com.segment.analytics.Traits;
+//import com.segment.analytics.Analytics;
+//import com.segment.analytics.Properties;
+//import com.segment.analytics.Traits;
 
 /**
  * Created by seraphicinfosolutions on 4/21/16.
@@ -21,7 +24,7 @@ public class Utility {
         this.context = context;
     }
 
-    public static void RegisterScreen(Context context, String string) {
+    public  void RegisterScreen(Context context, String string) {
 
         try{
             final ParseUser user = ParseUser.getCurrentUser();

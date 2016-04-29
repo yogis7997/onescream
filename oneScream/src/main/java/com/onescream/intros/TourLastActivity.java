@@ -19,10 +19,13 @@ public class TourLastActivity extends Activity implements View.OnClickListener {
     private TextView m_tvContents;
     ImageView Indicator6,Indicator5;
     boolean getValue=false;
+    private Utility utility;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Utility.RegisterScreen(this,getResources().getString(R.string.one_more_thing));
+        utility = new Utility(this);
+        utility.RegisterScreen(this,getResources().getString(R.string.one_more_thing));
         setContentView(R.layout.activity_tour_new);
         updateLCD();
     }

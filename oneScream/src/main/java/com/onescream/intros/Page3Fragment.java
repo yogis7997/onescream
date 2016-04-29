@@ -23,10 +23,13 @@ public final class Page3Fragment extends Fragment implements OnClickListener {
 	Typeface sanfacebold,sanfaceRegular, sanfaceMedium,sanfacesemibold,proximasemi;
 	ImageView Indicator6,Indicator5;
 	boolean getValue=false;
+	private Utility utility;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.about_how));
+		utility = new Utility(getActivity());
+		utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.about_how));
 
 
 	}

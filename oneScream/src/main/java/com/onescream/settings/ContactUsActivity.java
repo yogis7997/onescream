@@ -30,13 +30,15 @@ public class ContactUsActivity extends Activity implements View.OnClickListener 
 	Typeface facethin,facebold,faceRegular,EstiloRegular;
 	Typeface sanfacebold,sanfaceRegular, sanfacesemibold
 			,sanfaceMedium, proximasemi;
+	private Utility utility;
 
 	// ////////////////////////////////////////////////////////////
 	// //////////////////////////////////////////////////////////////
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Utility.RegisterScreen(this, getResources().getString(R.string.contact));
+		utility = new Utility(this);
+		utility.RegisterScreen(this, getResources().getString(R.string.contact));
 		setContentView(R.layout.activity_contact_us);
 		ActivityTask.INSTANCE.add(this);
 

@@ -47,11 +47,14 @@ public class AddressFragment extends Activity implements View.OnClickListener {
             layout_frequent;
     SharedPreferences sharedpreferences;
     SharedPreferences.Editor editor;
+    private Utility utility;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_address_one);
-        Utility.RegisterScreen(this,getResources().getString(R.string.frequesnted_address));
+        utility = new Utility(this);
+        utility.RegisterScreen(this,getResources().getString(R.string.frequesnted_address));
         Bundle extras = getIntent().getExtras();
 
         if (extras != null) {

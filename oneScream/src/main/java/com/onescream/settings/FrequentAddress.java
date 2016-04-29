@@ -49,6 +49,7 @@ public class FrequentAddress extends Activity implements View.OnClickListener {
             frequent_address3;
     SharedPreferences sharedpreferences;
     SharedPreferences.Editor editor;
+    private Utility utility;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +60,8 @@ public class FrequentAddress extends Activity implements View.OnClickListener {
         sharedpreferences = getSharedPreferences(pref_name, Context.MODE_PRIVATE);
         editor = sharedpreferences.edit();
 
-
-        Utility.RegisterScreen(this, getResources().getString(R.string.frequesnted_address));
+        utility = new Utility(this);
+        utility.RegisterScreen(this, getResources().getString(R.string.frequesnted_address));
 
 
         updateLcd();

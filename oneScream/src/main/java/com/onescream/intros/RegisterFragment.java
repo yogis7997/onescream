@@ -53,11 +53,13 @@ public final class RegisterFragment extends Fragment implements View.OnClickList
     private String m_strFbId;
     private String m_strpaswrd;
     private String m_strrepaswrd;
+    private Utility utility;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.ready_page));
+        utility = new Utility(getActivity());
+        utility.RegisterScreen(getActivity(), getActivity().getResources().getString(R.string.ready_page));
 
 
     }

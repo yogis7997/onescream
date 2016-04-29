@@ -46,13 +46,15 @@ public class YourDetailsActivity extends Activity implements View.OnClickListene
     private TextView m_tvUpgradePlan;
     private TextView m_tvRemainedDays;
     Typeface facethin,facebold,faceRegular,EstiloRegular,faceMedium;
+    private Utility utility;
 
     // ////////////////////////////////////////////////////////////
     // //////////////////////////////////////////////////////////////
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Utility.RegisterScreen(this, getResources().getString(R.string.personal_info));
+        utility = new Utility(this);
+        utility.RegisterScreen(this, getResources().getString(R.string.personal_info));
         setContentView(R.layout.activity_new_your_details);
         ActivityTask.INSTANCE.add(this);
 

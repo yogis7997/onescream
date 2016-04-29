@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.support.multidex.MultiDex;
 
 import com.parse.Parse;
 import com.parse.PushService;
@@ -15,6 +16,7 @@ import java.util.GregorianCalendar;
 import com.onescream.engine.UniversalScreamEngine;
 import com.onescream.service.OneScreamService;
 
+//import com.segment.analytics.Analytics;
 import com.segment.analytics.Analytics;
 import com.uc.prjcmn.GlobalValues;
 import com.uc.prjcmn.PRJCONST;
@@ -23,9 +25,8 @@ import com.uc.prjcmn.SharedPreferencesMgr;
 
 /**
  * Application class for this application
- *
+ * <p/>
  * Created by Anwar Almojarkesh
- *
  */
 
 public class MainApplication extends Application {
@@ -44,21 +45,20 @@ public class MainApplication extends Application {
         Analytics.setSingletonInstance(analytics);
 
 
-
         // ///////////////// ///////////
         m_pPhoneDb = new SharedPreferencesMgr(this);
         long first_time = m_pPhoneDb.getFirstRunTime();
         if (first_time == 0) {
             GlobalValues.sharedInstance()._firstRun = true;
         }
-        
+
         long firstDateTime = m_pPhoneDb.getFirstDateTime();
         if (firstDateTime == 0) {
-        	Calendar cal = GregorianCalendar.getInstance();
-        	cal.set(Calendar.HOUR, 0);
-        	cal.set(Calendar.MINUTE, 0);
-        	cal.set(Calendar.SECOND, 0);
-        	m_pPhoneDb.setFirstDateTime(cal.getTimeInMillis());
+            Calendar cal = GregorianCalendar.getInstance();
+            cal.set(Calendar.HOUR, 0);
+            cal.set(Calendar.MINUTE, 0);
+            cal.set(Calendar.SECOND, 0);
+            m_pPhoneDb.setFirstDateTime(cal.getTimeInMillis());
         }
 
         m_pPhoneDb.loadDetectedActInfo();
@@ -92,4 +92,9 @@ public class MainApplication extends Application {
         return m_pPhoneDb;
     }
 
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 }

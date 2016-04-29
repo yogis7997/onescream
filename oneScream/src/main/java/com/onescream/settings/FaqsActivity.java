@@ -42,13 +42,15 @@ public class FaqsActivity extends Activity implements View.OnClickListener {
 	Typeface facethin,facebold,faceRegular,faceMedium;
 	
 	TextView title_faq;
+    private Utility utility;
 
     // ////////////////////////////////////////////////////////////
     // //////////////////////////////////////////////////////////////
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Utility.RegisterScreen(this, getResources().getString(R.string.FAQ));
+        utility = new Utility(this);
+        utility.RegisterScreen(this, getResources().getString(R.string.FAQ));
         setContentView(R.layout.activity_faqs);
         ActivityTask.INSTANCE.add(this);
 

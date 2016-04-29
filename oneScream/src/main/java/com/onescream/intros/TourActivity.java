@@ -39,12 +39,14 @@ public class TourActivity extends FragmentActivity implements
     public boolean m_bOnlyFirstScreen = false;
     public boolean m_bInTour = true;
     ImageView back;
+    private Utility utility;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstscreen);
-        Utility.RegisterScreen(this, getResources().getString(R.string.tour));
+        utility = new Utility(this);
+        utility.RegisterScreen(this, getResources().getString(R.string.tour));
 
         Bundle extras = getIntent().getExtras();
         boolean value = false;

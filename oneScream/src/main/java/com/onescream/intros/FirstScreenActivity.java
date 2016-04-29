@@ -15,9 +15,7 @@ import com.onescream.Utils.Utility;
 import com.onescream.login.LoginActivity;
 import com.onescream.login.SignupActivity;
 import com.parse.ParseUser;
-import com.segment.analytics.Analytics;
-import com.segment.analytics.Properties;
-import com.segment.analytics.Traits;
+
 import com.uc.prjcmn.ActivityTask;
 import com.uc.prjcmn.SharedPreferencesMgr;
 
@@ -42,14 +40,16 @@ public class FirstScreenActivity extends FragmentActivity implements
 
     public boolean m_bOnlyFirstScreen = false;
     public boolean m_bInTour = false;
+    private Utility utility;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        Utility.RegisterScreen(this, getResources().getString(R.string.signing_in));
 
 
+        utility = new Utility(this);
+        utility.RegisterScreen(this, getResources().getString(R.string.signing_in));
         ActivityTask.INSTANCE.add(this);
         final ParseUser user = ParseUser.getCurrentUser();
         if (user == null) {
@@ -69,7 +69,7 @@ public class FirstScreenActivity extends FragmentActivity implements
 
         } else {
             Log.e("First ", " username== " + user.getUsername());
-            Utility.RegisterScreen(this, getResources().getString(R.string.landing));
+            utility.RegisterScreen(this, getResources().getString(R.string.landing));
 //            Analytics.with(FirstScreenActivity.this).identify("email:"+user.getEmail(), new Traits().putName("a user's name"), null);
 //            Analytics.with(FirstScreenActivity.this).identify("",new Traits().putName(user.getUsername()).putEmail(user.getEmail()));
             new Handler().postDelayed(new Runnable() {

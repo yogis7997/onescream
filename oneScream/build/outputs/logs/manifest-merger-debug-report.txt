@@ -130,6 +130,7 @@ MERGED from [com.android.support:support-vector-drawable:23.2.1] /Users/seraphic
 MERGED from [com.android.support:support-v4:23.2.1] /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.2.1] /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.2.1] /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.1] /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.2.1] /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -274,14 +275,14 @@ uses-permission#android.permission.GET_TASKS
 ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:50:5-68
 	android:name
 		ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:50:22-65
-android:uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:52:5-83
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:52:5-75
 	android:name
-		ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:52:30-80
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:53:5-88
+		ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:52:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:53:5-80
 	android:name
-		ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:53:30-85
+		ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:53:22-77
 application
 ADDED from /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/AndroidManifest.xml:55:5-229:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] /Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:25:5-20
