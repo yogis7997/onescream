@@ -1,6 +1,7 @@
 package com.onescream.service;
 
 import android.Manifest;
+
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -74,25 +75,36 @@ public class OneScreamService extends Service {
 
 	@SuppressWarnings("deprecation")
 	private void registerNotificationIcon() {
-//		try {
-//				if (!m_bNotiBackground) {
+		try {
+				if (!m_bNotiBackground) {
+
+					PendingIntent contentIntent = PendingIntent.getActivity(OneScreamService.this, 0,
+							new Intent(OneScreamService.this, HomeActivity.class),
+							PendingIntent.FLAG_UPDATE_CURRENT);
+					Notification.Builder builder = new Notification.Builder(OneScreamService.this);
+					builder.setSmallIcon(R.drawable. ic_launcher)
+							.setContentTitle("Detecting Sound")
+					.setContentIntent(contentIntent);
+
+					Notification notification = builder.getNotification();
+					notiManager.notify(33333, notification);
+
 //				Notification notification = new Notification(
 //				R.drawable.ic_launcher, "Detecting Sound",
 //				System.currentTimeMillis());
 //
-//				PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
-//				new Intent(this, HomeActivity.class),
+//				PendingIntent contentIntent = PendingIntent.getActivity(OneScreamService.this, 0,
+//				new Intent(OneScreamService.this, HomeActivity.class),
 //				PendingIntent.FLAG_UPDATE_CURRENT);
 //
-//							notification.setLatestEventInfo(this, "one scream",
-//									"One scream is detecting sounds.", contentIntent);
 //
+//					notiManager.notify(33333, notification);
 //				startForeground(33333, notification);
-//				m_bNotiBackground = true;
-//				}
-//		}catch (Exception e){
-//
-//		}
+				m_bNotiBackground = true;
+				}
+		}catch (Exception e){
+
+		}
 	}
 
 	@Override

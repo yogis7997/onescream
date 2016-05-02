@@ -9,6 +9,7 @@ import net.simonvt.menudrawer.MenuDrawer.OnDrawerStateChangeListener;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -105,6 +106,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
     private boolean m_bWiFiPopuped = false;
     private Utility utility;
     Typeface facethin, facebold, faceRegular, EstiloRegular, sanfaceRegular, sanfacesemibold;
+    private NotificationManager notiManager;
 
     // ////////////////////////////////////////////////////////////
     // //////////////////////////////////////////////////////////////
@@ -115,7 +117,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
         utility = new Utility(this);
         utility.RegisterScreen(this, getResources().getString(R.string.standing_by));
         screen_rate = getResources().getDisplayMetrics().density;
-
+        notiManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         mDrawer = MenuDrawer.attach(this);
         mDrawer.setContentView(R.layout.activity_home);
         mDrawer.setMenuView(R.layout.layout_left_menu);
@@ -619,6 +621,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
 
     private void updateUIForDetectState() {
         if (GlobalValues.sharedInstance().m_bDetecting) {
+
             utility.RegisterScreen(this, getResources().getString(R.string.listening));
             m_tvTitle.setText("Not to Worry");
             m_tvDetectStatus.setText("You are being protected by One Scream");
@@ -629,6 +632,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
             makeSmallPlanet();
 
         } else {
+            notiManager.cancel(33333);
             utility.RegisterScreen(this, getResources().getString(R.string.standing_by));
             m_tvTitle.setText("Standing By");
             m_tvDetectStatus.setText("Press play and we will listen");

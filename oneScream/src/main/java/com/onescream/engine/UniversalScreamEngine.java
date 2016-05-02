@@ -60,7 +60,7 @@ public class UniversalScreamEngine {
     /**
      * Variables of Unviersal Engine
      */
-    public static float SCREAM_LOUDNESS = 1000.0f;
+    public static float SCREAM_LOUDNESS = 200.0f;
     public static float UNIVERSAL_THRESHOLD_DELTA = 0;
     public static final float FALSE_DETECTION_CORRECTION = 1.0f;
     public static final int UNIVERSAL_DETECT_PERIOD_FRAMES = 300;

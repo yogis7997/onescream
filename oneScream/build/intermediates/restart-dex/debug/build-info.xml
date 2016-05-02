@@ -4,26 +4,26 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="29976207440387" >
+    timestamp="20166034943766" >
 
     <task
         name="javac"
-        duration="3393" />
+        duration="16165" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="93" />
+        duration="4059" />
     <task
         name="verifier"
-        duration="9" />
+        duration="563" />
 
     <artifact
         location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/outputs/apk/oneScream-debug.apk"
         type="MAIN" />
 
-    <build timestamp="29976207440387" >
+    <build timestamp="20166034943766" >
         <artifact
             location="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/outputs/apk/oneScream-debug.apk"
             type="MAIN" />
