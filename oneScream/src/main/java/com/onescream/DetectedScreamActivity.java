@@ -429,6 +429,7 @@ public class DetectedScreamActivity extends Activity implements
 
     private void stopAlarm() {
         if (mCamera != null) {
+            mCamera.stopPreview();
             mCamera.release();
             mCamera = null;
         }
@@ -684,5 +685,29 @@ public class DetectedScreamActivity extends Activity implements
                 }
             }, 1000);
         }
+    }
+
+
+
+    @Override
+    protected void onPause() {
+        // TODO Auto-generated method stub
+        if (mCamera != null) {
+            mCamera.stopPreview();
+            mCamera.release();
+            mCamera = null;
+            Log.d(TAG, "releaseCamera -- done");
+        }
+        super.onPause();
+    }
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+        if (mCamera != null) {
+
+            Camera.open();
+            Log.d(TAG, "openCamera -- done");
+        }
+        super.onResume();
     }
 }
