@@ -62,6 +62,7 @@ public class UniversalScreamEngine {
      */
     public static float SCREAM_LOUDNESS = 200.0f;
     public static float UNIVERSAL_THRESHOLD_DELTA = 0;
+
     public static final float FALSE_DETECTION_CORRECTION = 1.0f;
     public static final int UNIVERSAL_DETECT_PERIOD_FRAMES = 300;
 
@@ -533,9 +534,9 @@ public class UniversalScreamEngine {
         }
 
         Log.i("Screaming", String.format(
-                "max_val=%.3f       frame_cnt=%d,       invalid_cnt=%d,          repeatcnt=%d",
-                maxVals[0], m_nUnivEngineFrameCnt, m_nUnivEngineInvalidCnt,
-                m_nUnivEngineRepeatCnt));
+                "max_val=%.3f,   max_val2=%.3f,       frame_cnt=%d,       invalid_cnt=%d,          repeatcnt=%d,          maxFreq=%.3f,          maxFreq2=%.3f",
+                maxVals[0],maxVals[1], m_nUnivEngineFrameCnt, m_nUnivEngineInvalidCnt,
+                m_nUnivEngineRepeatCnt,maxFreqs[0],maxFreqs[1]));
 //		Log.e("YogiScream", String.format(
 //				"max_val=%.3f       frame_cnt=%d,       invalid_cnt=%d,          repeatcnt=%d",
 //				maxVals[0], m_nUnivEngineFrameCnt, m_nUnivEngineInvalidCnt,
