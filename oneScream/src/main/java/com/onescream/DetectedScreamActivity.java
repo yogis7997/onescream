@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.onescream.service.OneScreamService;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
@@ -164,6 +165,19 @@ public class DetectedScreamActivity extends Activity implements
             e1.printStackTrace();
 
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        stopService(new Intent(DetectedScreamActivity.this, OneScreamService.class));
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        startService(new Intent(DetectedScreamActivity.this, OneScreamService.class));
     }
 
     @Override
@@ -416,7 +430,13 @@ public class DetectedScreamActivity extends Activity implements
         // Camera Flash
         if (GlobalValues.sharedInstance().m_bNotifyFlash) {
             if (mCamera == null) {
-                mCamera = Camera.open();
+                try {
+                    mCamera = Camera.open();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Log.e(TAG," error2== "+e.getMessage());
+                }
+
             }
             flashing();
         }
@@ -482,15 +502,21 @@ public class DetectedScreamActivity extends Activity implements
                     return;
 
                 if (mCamera != null) {
-                    Camera.Parameters mParameters = mCamera.getParameters();
-                    if (m_nStep % 2 == 1) {
-                        mParameters
-                                .setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
-                        mCamera.setParameters(mParameters);
-                    } else {
-                        mParameters
-                                .setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
-                        mCamera.setParameters(mParameters);
+                    try {
+                        Camera.Parameters mParameters = mCamera.getParameters();
+                        if (m_nStep % 2 == 1) {
+                            mParameters
+                                    .setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+                            mCamera.setParameters(mParameters);
+                        } else {
+                            mParameters
+                                    .setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
+                            mCamera.setParameters(mParameters);
+                        }
+                    } catch (Exception e) {
+
+                        Log.e(TAG," error1== "+e.getMessage());
+                        e.printStackTrace();
                     }
                     flashing();
                 }
@@ -688,7 +714,6 @@ public class DetectedScreamActivity extends Activity implements
     }
 
 
-
     @Override
     protected void onPause() {
         // TODO Auto-generated method stub
@@ -700,14 +725,19 @@ public class DetectedScreamActivity extends Activity implements
         }
         super.onPause();
     }
-    @Override
-    protected void onResume() {
-        // TODO Auto-generated method stub
-        if (mCamera != null) {
 
-            Camera.open();
-            Log.d(TAG, "openCamera -- done");
-        }
-        super.onResume();
-    }
+//    @Override
+//    protected void onResume() {
+//        // TODO Auto-generated method stub
+//        if (mCamera != null) {
+//            try {
+//                Camera.open();
+//                Log.d(TAG, "openCamera -- done");
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//
+//        }
+//        super.onResume();
+//    }
 }

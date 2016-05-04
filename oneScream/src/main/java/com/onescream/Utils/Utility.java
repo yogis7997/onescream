@@ -27,6 +27,7 @@ public class Utility {
     public  void RegisterScreen(Context context, String string) {
 
         try{
+
             final ParseUser user = ParseUser.getCurrentUser();
             Analytics.with(context).identify("email:" + user.getEmail(), new Traits().putName(user.getString("first_name")).putEmail(user.getEmail()), null);
 

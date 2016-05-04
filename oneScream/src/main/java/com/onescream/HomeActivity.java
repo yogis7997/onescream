@@ -37,6 +37,8 @@ import com.onescream.engine.UniversalScreamEngine;
 import com.onescream.intros.About;
 import com.onescream.intros.FirstScreenActivity;
 import com.onescream.intros.TourActivity;
+import com.onescream.service.OneScreamService;
+import com.onescream.service.PlayAudio;
 import com.onescream.settings.ContactUsActivity;
 import com.onescream.settings.FaqsActivity;
 import com.onescream.settings.FoundersActivity;
@@ -181,7 +183,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onResume() {
         updateUIForDetectState();
-
+        stopService(new Intent(HomeActivity.this, PlayAudio.class));
         super.onResume();
 
         if (GlobalValues.sharedInstance().m_bDetecting) {
@@ -950,4 +952,6 @@ public class HomeActivity extends Activity implements View.OnClickListener {
 //					}
 //				}, null);
     }
+
+
 }
