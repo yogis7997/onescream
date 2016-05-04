@@ -9,6 +9,8 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.location.Address;
 import android.location.Location;
 import android.net.Uri;
@@ -81,12 +83,14 @@ public class OneScreamService extends Service {
 					PendingIntent contentIntent = PendingIntent.getActivity(OneScreamService.this, 0,
 							new Intent(OneScreamService.this, HomeActivity.class),
 							PendingIntent.FLAG_UPDATE_CURRENT);
+					Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
 					Notification.Builder builder = new Notification.Builder(OneScreamService.this);
 					builder.setSmallIcon(R.drawable. ic_launcher)
-							.setContentTitle("Detecting Sound")
+							.setContentTitle("Detecting Sound").setLargeIcon(largeIcon).setAutoCancel(true).setContentText("One scream is detecting sounds.")
 					.setContentIntent(contentIntent);
 
 					Notification notification = builder.getNotification();
+					notification.flags = Notification.FLAG_ONGOING_EVENT;
 					notiManager.notify(33333, notification);
 
 //				Notification notification = new Notification(

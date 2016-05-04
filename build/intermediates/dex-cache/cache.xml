@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5ae023e2b237a1f4830e473c370bdd7a48ed7206">
+        <dex dex="/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_98b1e132e016766349c9abf372747ffb19fd1059/classes.dex" />
+    </item>
+
+</items>

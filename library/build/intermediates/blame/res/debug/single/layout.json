@@ -4,12 +4,12 @@
         "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/library/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/library/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
         "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/library/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/library/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",

@@ -20,12 +20,12 @@
         "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/res/drawable-xhdpi/bg_galaxy.png"
     },
     {
-        "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png",
-        "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_plus_signin_btn_text_light_focused.9.png"
-    },
-    {
         "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png",
         "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png",
+        "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_plus_signin_btn_text_light_focused.9.png"
     },
     {
         "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_moon_home.png",
@@ -60,12 +60,12 @@
         "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/src/main/res/drawable-xhdpi/bg_editbox.9.png"
     },
     {
-        "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png",
-        "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/onescream/library/unspecified/res/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png"
-    },
-    {
         "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
         "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png",
+        "source": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/exploded-aar/onescream/library/unspecified/res/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png"
     },
     {
         "merged": "/Users/seraphicinfosolutions/Documents/YogiData/Projects/Scream/Scream mohit/onescream/oneScream/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_focused.9.png",
